@@ -65,6 +65,7 @@ $string['displayrelativerank'] = 'Display a relative rank';
 $string['enableinfos'] = 'Enable infos page';
 $string['enableinfos_help'] = 'When set to \'No\', students will not be able to view the infos page.';
 $string['enableladder'] = 'Enable the ladder';
+$string['enablecheatguard'] = 'Enable the cheat guard';
 $string['enableladder_help'] = 'When set to \'No\', students will not be able to view the ladder.';
 $string['enablelevelupnotif'] = 'Enable level up notification';
 $string['enablelevelupnotif_help'] = 'When set to \'Yes\', students will be displayed a popup congratulating them for the new level reached.';

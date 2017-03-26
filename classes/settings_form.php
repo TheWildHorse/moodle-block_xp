@@ -96,6 +96,9 @@ class block_xp_settings_form extends moodleform {
 
         $mform->addElement('header', 'hdrcheating', get_string('cheatguard', 'block_xp'));
 
+        $mform->addElement('selectyesno', 'enablecheatguard', get_string('enablecheatguard', 'block_xp'));
+        $mform->setDefault('enablecheatguard', $defaultconfig->enablecheatguard);
+
         $mform->addElement('text', 'maxactionspertime', get_string('maxactionspertime', 'block_xp'));
         $mform->setDefault('maxactionspertime', $defaultconfig->maxactionspertime);
         $mform->addHelpButton('maxactionspertime', 'maxactionspertime', 'block_xp');

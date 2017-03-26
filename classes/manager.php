@@ -79,6 +79,7 @@ class block_xp_manager {
         'enablelog' => 1,
         'keeplogs' => 3,
         'enableladder' => true,       // Enable the ladder.
+        'enablecheatguard' => true,   // Enable the cheat guard.
         'enableinfos' => true,        // Enable the infos page.
         'levelsdata' => '',           // JSON encoded value of the levels data.
         'enablelevelupnotif' => true, // Enable the level up notification.
@@ -145,6 +146,10 @@ class block_xp_manager {
      */
     protected function can_capture_event(\core\event\base $event) {
         global $SESSION;
+
+        if($this->get_config('enablecheatguard') == false) {
+            return true;
+        } 
 
         $now = time();
         $maxcount = 64;
